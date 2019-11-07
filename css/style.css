@@ -1,0 +1,439 @@
+@charset "utf-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.head {
+  /* width: 1024px; */
+  height: 140px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.6);
+}
+h1 {
+  position: absolute;
+  top: 0;
+  left: 16.2rem;
+  font-weight: normal;
+}
+.logo {
+  position: absolute;
+  top: 3rem;
+  left: 16.2rem;
+}
+.action__form--apoint::before,
+.action__form--contact::before,
+.tel::before,
+.address::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 5px
+}
+.action__form--apoint::before {
+  content: '\f274';
+  position: absolute;
+  top: -2px;
+  left: 0.5rem;
+}
+.action__form--contact::before {
+  content: '\f0e0';
+  position: absolute;
+  top: -2px;
+  left: 0.5rem;
+}
+.tel::before {
+  content: '\f879';
+  font-size: 2.2rem;
+}
+.address::before {
+  content: '\f3c5';
+}
+.action__form--apoint {
+  position: absolute;
+  top: 0;
+  width: 23rem;
+  height: 4rem;
+  right: 40rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-right: 3rem;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #0f0f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s;
+}
+.action__form--apoint a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.action__form--apoint:hover {
+  opacity: 0.6;
+}
+.action__form--contact {
+  position: absolute;
+  top: 0;
+  right: 15rem;
+  width: 26rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid #000;
+  background-color: #0f0f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s;
+}
+.action__form--contact a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.action__form--contact:hover {
+  opacity: 0.6;
+}
+.action__box {
+  display: flex;
+  position: absolute;
+  top: 5.5rem;
+  right: 15rem;
+  /* right: 20rem; */
+}
+.action__subbox {
+  margin-right: 2rem;
+}
+.tel {
+  color: #00f;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.action__subbox .address {
+  font-size: 1.6rem;
+}
+
+table th, table td {
+  border: 1px solid #f8f8ff;
+}
+table th {
+  background-color: #00ff7f;
+  padding: 0 1rem;
+}
+table td {
+  text-align: center;
+}
+
+/*--------- nav ----------*/
+.nav__items {
+  display: flex;
+  width: 102rem;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+.nav__item {
+  width: 17rem;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.nav__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav__item a:hover {
+  color: #0f0;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+/*---------- top_img ----------*/
+.top__img {
+  height: 68.3rem;
+  background: url(../images/img_top.jpg) no-repeat center center / contain;
+  margin-bottom: 3rem;
+}
+/*---------- ご予約 ----------*/
+.wrap {
+  display: flex;
+  width: 102.4rem;
+  margin: 0 auto;
+}
+aside {
+  width: 30rem;
+  margin-right: 7.4rem;
+}
+.aside__box {
+  background-color: #ffefd5;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.aside__apoint, .aside__exam, .aside__first {
+  font-size: 2rem;
+  background-color: #ffa07a;
+  padding: 5px 0;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.aside__form {
+  position: relative;
+  width: 230px;
+  height: 4rem;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  border: 1px solid #000;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0 auto;
+  background-color: #0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s;
+}
+.aside__form a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.aside__form:hover {
+  opacity: 0.6;
+}
+.aside__form a::before{
+  display: inline;
+  font-family: 'Font Awesome 5 Free';
+  content: '\f274';
+  font-weight: 900;
+  margin-right: 0.5rem;
+  position: absolute;
+  top: -0.2rem;
+  left: 0.5rem;
+}
+/*---------　診察案内 ---------- */
+.aside__apoint::before,
+.aside__exam::before,
+.aside__first::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+.aside__apoint::before {
+  content: '\f274';
+}
+.aside__exam::before {
+  content: '\f0fa';
+}
+.aside__first::before {
+  content: '\f007';
+}
+.aside__items {
+  position: relative;
+  font-size: 2rem;
+  list-style-type: none;
+}
+.aside__items .aside__item {
+  height: 5rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #000;
+}
+.aside__items .aside__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+.aside__items .aside__item a:hover {
+  background-color: #ffc0cb;
+}
+.aside__items .aside__item::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f138";
+  font-weight: 900;
+  color: skyblue;
+  position: absolute;
+  left: 4.5rem;
+}
+.aside__recruit a:hover {
+  transition: all 0.2s;
+}
+.aside__recruit a:hover {
+  opacity: 0.8;
+}
+/*---------- wrap ---------*/
+main {
+  width: 65rem;
+}
+section {
+  margin-bottom: 5rem;
+}
+.trouble__title, .reason__title {
+  margin-bottom: 1rem;
+}
+.trouble__items, .reason__items {
+  width: 65rem;
+  list-style-type: none;
+}
+.reason__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reson__items .reason__item {
+  width: 30rem;
+}
+.reason__items .reason__item:nth-of-type(odd) {
+  margin-right: 3rem;
+}
+/*----------　お知らせ ----------*/
+.info {
+  font-size: 2rem;
+  background-color: #ffa07a;
+  padding-left: 1rem;
+}
+.info::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f0e0';
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
+.info__page a {
+  display: inline-block;
+  width: 10rem;
+  font-size: 1.6rem;
+  margin-left: 43rem;
+  background-color: #ff0;
+  border-radius: 1rem;
+  text-align: center;
+  color: #4169e1;
+}
+.info__page a:hover {
+  display: inline-block;
+  color: #ff0;
+  background-color: #4169e1;
+  border-radius: 1rem;
+  width: 10rem;
+}
+.info__items {
+  list-style-type: none;
+}
+.info__item {
+  margin-bottom: 1rem;
+}
+.info__item a {
+  color: #00f;
+  text-decoration: underline;
+}
+
+/*---------- 診察の案内 ----------*/
+.exam__content {
+  width: 100%;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.exam__title {
+  font-size: 3rem;
+  background-color: #ffa07a;
+  padding-left: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.exam__title::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f002';
+  font-weight: 900;
+  margin-right: 0.5rem;
+}
+.exam__title::after {
+  content: '';
+  /* width: 60rem; */
+  display: inline-block;
+  height: 0.5rem;
+  background-color: #000000;
+  vertical-align: middle;
+}
+.exam__box {
+  width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.exam__box p {
+  margin-right: 2rem;
+  overflow: hidden;
+  width: 32rem;
+  height: 20rem;
+}
+.exam__box p:nth-of-type(3),
+.exam__box p:nth-of-type(6) {
+  margin-right: 0;
+}
+.exam__box p:nth-of-type(1),
+.exam__box p:nth-of-type(2),
+.exam__box p:nth-of-type(3) {
+  margin-bottom: 2rem;
+}
+.exam__box a img {
+  transition: all 0.4s ease-in-out;
+  width: 32rem;
+  height: 20rem;
+}
+.exam__box a:hover img {
+  opacity: 0.8;
+  width: 32rem;
+  height: 20rem;
+  transform: scale(1.2);
+}
+/*---------- footer ----------*/
+footer {
+  width: 1024px;
+  display: flex;
+  margin: 0 auto;
+}
+.footer__int {
+  margin-right: 2rem;
+}
+.footer__logo {
+  margin-bottom: 2rem;
+}
+.footer__subbox {
+  margin-bottom: 2rem;
+}
+.footer__items {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.footer__item {
+  display: inline-block;
+  font-size: 1.4rem;
+  border-right: 1px solid #000;
+  padding-right: 0.6rem;
+}
+.footer__item:last-child {
+  border: 0;
+  padding: 0;
+}
+.footer__item a:hover {
+  text-decoration: underline;
+  color: #0f0;
+}
+.copy {
+  background-color: #0f0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+
